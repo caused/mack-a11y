@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+    <head></head>
+        <link rel="stylesheet" href="../../bootstrap.min.css">
+        <link rel="stylesheet" href="../src/css/accordion.css">
+    </head>
+
+    <body>
+        <div class="container" role="main">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Accordion</h1>
+                    <p>Componente de accordion</p>
+                    <hr>
+
+                    <h2>Accordion com bordas</h2>
+                    <div class="accordion" role="presentation">
+                        <div role="heading" aria-level="3">
+                            <button aria-expanded="false" class="accordion__trigger" aria-controls="sect9"
+                            id="accordion9id" type="button">
+                                <span class="accordion-title">Informações pessoais</span>
+                                <span class="accordion__icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div id="sect9" aria-labelledby="accordion9id" class="accordion__panel" hidden>
+                            <h3>Título de nível 3</h3>
+                            <h4>Título de nível 4</h4>
+                            <p>Um parágrafo qualquer</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h2>Accordion sem bordas</h2>
+
+                    <div class="accordion accordion--group" role="presentation">
+                            <div role="heading" aria-level="3">
+                                <button aria-expanded="false" class="accordion__trigger" aria-controls="accordionSection1"
+                                id="accordionId1" type="button">
+                                    <span class="accordion-title">Informações pessoais</span>
+                                    <span class="accordion__icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div id="accordionSection1" aria-labelledby="accordionId1" class="accordion__panel" hidden>
+                                <h3>Título de nível 3</h3>
+                                <h4>Título de nível 4</h4>
+                                <p>Um parágrafo qualquer</p>
+                            </div>
+
+                            <div role="heading" aria-level="3">
+                                    <button aria-expanded="false" class="accordion__trigger" aria-controls="accordionSection2"
+                                    id="accordionId2" type="button">
+                                        <span class="accordion-title">Informações pessoais</span>
+                                        <span class="accordion__icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div id="accordionSection2" aria-labelledby="accordionId2" class="accordion__panel" hidden>
+                                    <h3>Título de nível 3</h3>
+                                    <h4>Título de nível 4</h4>
+                                    <p>Um parágrafo qualquer</p>
+                                </div>
+
+                                <div role="heading" aria-level="3">
+                                        <button aria-expanded="false" class="accordion__trigger" aria-controls="accordionSection3"
+                                        id="accordionId3" type="button">
+                                            <span class="accordion-title">Informações pessoais</span>
+                                            <span class="accordion__icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div id="accordionSection3" aria-labelledby="accordionId3" class="accordion__panel" hidden>
+                                        <h3>Título de nível 3</h3>
+                                        <h4>Título de nível 4</h4>
+                                        <p>Um parágrafo qualquer</p>
+                                    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="../../jquery.js"></script>
+    <script src="../src/js/accordion.js"></script>
+    <script>
+        $(".accordion").mackAccordion();
+    </script>
+</html>

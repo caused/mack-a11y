@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+    <head></head>
+        <link rel="stylesheet" href="../../bootstrap.min.css">
+        <link rel="stylesheet" href="../src/css/accordion.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Âncora</h1>
+            Ir para:
+
+            <div>
+                <a class="skipto" href="#noticias" aria-label="Noticias - Conteúdo na mesma página">ir para noticias</a>
+            </div>
+            <div>
+                <button class="skipto" data-target="#colunas" aria-label="Colunas - Conteúdo na mesma página">colunas</button>
+            </div>
+        </div>
+
+
+        <div class="container" id="noticias">
+            <p>Texto de exemplo de notícias</p>
+
+        </div>
+
+
+        <div class="container" id="colunas">
+                <p>Texto de exemplo de colunas</p>
+        </div>
+    </body>
+
+    <script src="../../jquery.js"></script>
+    <script src="../src/js/ancora.js"></script>
+</html>

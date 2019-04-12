@@ -1,0 +1,42 @@
+.mack-box{
+    border-radius: 0.25rem;
+    border: 1px solid #ec7000;
+    background: #fff;
+}
+
+.mack-box .mack-box__item{
+    padding: 0.75rem;
+    color:#464646;
+    position: relative;
+}
+
+.mack-box .mack-box__item ~ .mack-box__item{
+    border-top: 1px solid #c8c8c8;
+}
+
+.mack-box .mack-box__close{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: "Arial" !important;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    padding: 0;
+    text-align: center;
+    margin-top: -0.75rem;
+    top: 50%;
+    right: 0.75rem;
+    speak: none;
+    color: #464646;
+    border: 0;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mack-box .mack-box__icon{
+    
+}

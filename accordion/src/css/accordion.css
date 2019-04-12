@@ -1,0 +1,116 @@
+.accordion{
+    background: #FFF;
+}
+
+.accordion--group .accordion__trigger, .accordion--group .accordion__panel{
+    border: 0!important;
+}
+
+.accordion--group .accordion__trigger::after{
+    position: absolute;
+    bottom: 0;
+    left: 1.875rem;
+    width: calc(100% - 60px);
+    content: "";
+    height: .0625rem;
+    background: #969290;
+}
+
+.accordion .accordion-title{
+    display: block;
+    pointer-events: none;
+    text-align: left;
+    position: relative;
+}
+
+.accordion .accordion__icon{
+    float: right;
+    font-size: 0.75rem;
+    color: #106EB0;
+    font-weight: 400;
+    position: absolute;
+    top: 0.8125rem;
+    right: 1.875rem;
+    z-index: -1;
+}
+
+.accordion .accordion__icon::before{
+    content: "exibir";
+}
+
+.accordion .accordion__icon i{
+    font-weight: bold;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.accordion dt:hover .accordion__trigger, .accordion dt:focus .accordion__trigger{
+    border-color: #ec7000;
+    background: #FFF;
+}
+
+.accordion dt:hover + dd, .accordion dt:focus + dd{
+    border-color: #ec7000;
+}
+
+.accordion__trigger{
+    padding: 0.75rem 1.875rem;
+    border: 0.0625rem solid #969290;
+    font-family: Arial !important;
+    font-size: 1rem !important;
+    font-weight: bold;
+    color: #464646;
+    border-radius: 0.375rem !important;
+    display: block;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+}
+
+.accordion__trigger:focus .accordion__icon,
+.accordion__trigger:hover .accordion__icon{
+    border-color: #212121;
+}
+
+.accordion__trigger[aria-expanded="true"]{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: 0;
+    position: relative;
+}
+
+.accordion__trigger[aria-expanded="true"]::after{
+    position: absolute;
+    bottom: 0;
+    left: 1.875rem;
+    width: calc(100% - 60px);
+    content: "";
+    height: 0.125rem;
+    background: #969290;
+}
+
+.accordion__trigger[aria-expanded="true"] .accordion__icon::before{
+    content: "ocultar";
+}
+
+
+.accordion__trigger[aria-expanded="true"] .accordion__icon i::before{
+    content: "\e9ce";
+}
+
+.accordion__panel{
+    margin:0;
+    padding: 0.5625rem 1.875rem 1rem;
+    border: 0.0625rem solid #969290;
+    border-top: 0;
+    margin-top: -0.625rem;
+    background: #FFFFFF;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    text-align: left;
+}
+
+.accordion__panel[hidden]{
+    display: none;
+}
