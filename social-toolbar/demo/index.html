@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/social-toolbar.css">
+</head>
+<body>
+    <div class="col-md-12">
+        <h1>Barra social</h1>
+        <hr/>
+        <div class="row">
+                <a href="#">I am a focusable link!</a>
+                <div id="social-toolbar" role="toolbar" tabindex="-1" aria-label="Share on Social Media" accesskey="s">
+                  <ul>
+                    <li>
+                      <button id="twitter" tabindex="0" aria-setsize="4" aria-posinset="1">
+                        <i class="fab fa-twitter-square">
+                          <span class="clipper">Twitter</span>
+                        </i>
+                
+                      </button>
+                    </li>
+                    <li>
+                      <button id="facebook" tabindex="-1" aria-setsize="4" aria-posinset="2">
+                        <i class="fab fa-facebook-square">
+                          <span class="clipper">Facebook</span>
+                        </i>
+                
+                      </button>
+                    </li>
+                    <li>
+                      <button id="linked-in" tabindex="-1" aria-setsize="4" aria-posinset="3">
+                        <i class="fab fa-linkedin">
+                          <span class="clipper">LinkedIn</span>
+                        </i>
+                
+                      </button>
+                    </li>
+                    <li>
+                      <button id="google-plus" tabindex="-1" aria-setsize="4" aria-posinset="4">
+                        <i class="fab fa-google-plus-square">
+                          <span class="clipper">Google Plus</span>
+                        </i>
+                
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div id="hidden-share" style="display: none;">
+                  Share Page
+                </div>
+        </div>   
+    </div>
+
+    <script src="../../jquery.js"></script>
+    <script src="../src/js/social-toolbar.js"></script>
+</body>
+</html>
