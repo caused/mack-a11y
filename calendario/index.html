@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="../jquery-ui.min.css">
+    <link rel="stylesheet" href="src/css/datepicker.css">
+</head>
+<body>
+
+        <div class="container">
+            <h1>Exemplo de calendário acessível</h1>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                        <label id="datepickerLabel" for="datepicker">Data (dd/mm/yyyy):</label><br>
+                        <input type="text" id="datepicker">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../jquery.js"></script>
+        <script src="../jquery-ui.min.js"></script>
+    .   <script src="src/js/datepicker.js"></script>
+
+        <script>
+            $(function () {
+                    $('#datepicker').datepicker({
+                        showOn: 'button',
+                        buttonText: 'Calendar View',
+                        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+                        dayNamesShort: [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ],
+                        showButtonPanel: true,
+                        closeText: 'Fechar',
+                        dateFormat: "dd/mm/yy",
+                        onClose: removeAria
+                    });
+
+                    // Add aria-describedby to the button referring to the label
+                    $('.ui-datepicker-trigger').attr('aria-describedby', 'datepickerLabel');
+
+                    dayTripper();
+
+            });
+        </script>
+</body>
+</html>

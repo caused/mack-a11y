@@ -1,0 +1,41 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../src/css/dialog.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="dialog lity-hide" id="dialog">
+            <div class="dialog-window col-md-12">
+                <div class="dialog-header">
+                    <h2 class="line-bottom dialog-title dialog-open-focus" id="dialog-title">Título visível</h2>
+                                    </div>
+                <div class="dialog-body">
+                    <p class="txt14"> Lorem ipsum dolor sit amet consectetur adipiscimg elit. Corrupti</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <button class="dialog-button btn btn-forward" id="open-dialog" data-lightbox="#dialog">Abrir modal</button>
+    </div>
+</body>
+<script src="../../jquery.js"></script>
+<script src="../src/js/lity.js"></script>
+
+<script>
+    $(document).on("click", "[data-lightbox]", function(e){
+        var value = $(this).attr("data-lightbox");
+        if(value.length > 0){
+            lity(value);
+        }
+    })
+</script>
+</html>

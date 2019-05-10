@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/box.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Box</h1>
+        <hr>
+        <h2>Box de alertas</h2>
+        <div class="mack-box">
+            <div class="mack-box__item" box-type="danger">
+                <span class="mack-box__text">
+                    <strong>Urgente:</strong> Sairam as notas no portal
+                </span>
+            </div>
+            <div class="mack-box__item" box-type="warning">
+                <span class="mack-box__text">
+                    <strong>Aviso:</strong> <a href="www.mackenzie.com.br">Clique e confira os novos cursos</a>
+                </span>
+                <button class="mack-box__close" data-target="#atencao" aria-label="fechar"></button>
+            </div>
+            <div class="mack-box__item" box-type="success">
+                <span class="mack-box__text">
+                    <strong>Atenção:</strong> Você já pode pedir a segunda via do seu diploma
+                </span>
+            </div>
+        </div>
+
+        <hr>
+        
+        <h2>Box de busca</h2>
+
+        <div class="mack-box" box-type="info">
+            <div class="mack-box__item" >
+                <div class="mack-box__title">
+                    Nenhum resultado encontrado
+                </div>
+                <div class="mack-box__text">
+                    Refaça sua pesquisa
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Box de erro</h2>
+
+        <div class="mack-box" box-type="dark">
+            <div class="mack-box__item" >
+                <div class="mack-box__text">
+                    Não é possível continuar
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Box de resumo</h2>
+
+        <div class="mack-box mack-box--summary">
+            <div class="summary__item">
+                <div class="summary__title">Tipo de matrícula</div>
+                <div class="summary__text">Bolsa mérito</div>
+            </div>
+            <div class="summary__item">
+                <div class="summary__title">Vencimento da bolsa</div>
+                <div class="summary__text">29/11/2019</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../../jquery.js"></script>
+    <script src="../src/js/box.js"></script>
+</body>
+</html>

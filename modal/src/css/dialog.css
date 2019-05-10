@@ -1,0 +1,233 @@
+.dialog .dialog-window{
+    display: block;
+    margin: 0 auto;
+}
+
+.dialog .dialog-header{
+    background: unser;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    position: unset;
+    z-index: unset;
+    height: auto;
+    padding: 15px 30px 0;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #C8C8C8;
+    border-bottom: 0;
+}
+
+.dialog .dialog-header h2{
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    border-color: #979797;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dialog .dialog-body{
+    font-size: 18px;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 0 30px 15px;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #C8C8C8;
+    border-top: 0;
+    max-height: 85vh;
+}
+
+@media screen and (max-width: 1095px){
+    .dialog .dialog-body{
+        overflow:auto;
+        max-height: 70vh;
+    }
+}
+
+.dialog .dialog-close{
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0;
+    padding: 0;
+}
+
+.dialog .dialog-close:before{
+    content: "x";
+    color: #464646;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-size: 20px;
+    font-family: Arial;
+    display: inline-block;
+    padding: 0 0 0 0;
+    margin: 0 0 8px 0;
+    border-bottom: 1px solid #979797;
+}
+
+/*! Lity - v2.3.1 - 2018-04-20
+* http://sorgalla.com/lity/
+* Copyright (c) 2015-2018 Jan Sorgalla; Licensed MIT */
+.lity {
+    z-index: 9990;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    background: #0b0b0b;
+    background: rgba(0, 0, 0, 0.9);
+    outline: none !important;
+    opacity: 0;
+  }
+  .lity.lity-opened {
+    opacity: 1;
+  }
+  .lity.lity-closed {
+    opacity: 0;
+  }
+  .lity * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .lity-wrap {
+    z-index: 9990;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    outline: none !important;
+  }
+  .lity-wrap:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+  .lity-loader {
+    z-index: 9991;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.8em;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+  }
+  .lity-loading .lity-loader {
+    opacity: 1;
+  }
+  .lity-container {
+    z-index: 9992;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: normal;
+    max-width: 100%;
+    max-height: 100%;
+    outline: none !important;
+  }
+  .lity-content {
+    z-index: 9993;
+    width: 104%;
+
+  }
+  .lity-close,
+  .lity-close:hover,
+  .lity-close:focus,
+  .lity-close:active,
+  .lity-close:visited {
+    z-index: 9994;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    color: #000;
+    font-style: normal;
+    font-size: 35px;
+    font-family: Arial, Helvetica, monospace;
+    line-height: 35px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    border: 0;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+.lity-close::-mox-focus-inner{
+    border: 0;
+    padding: 0;
+}
+
+  .lity-close:active {
+    top: 1px;
+  }
+  /* Image */
+  .lity-image img {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+    border: 0;
+  }
+  /* iFrame */
+  .lity-iframe .lity-container {
+    width: 100%;
+    max-width: 964px;
+  }
+  .lity-iframe-container {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: auto;
+    pointer-events: auto;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+  }
+  .lity-iframe-container iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #000;
+  }
+  .lity-hide {
+    display: none;
+  }
+  
+  .dialog .header-content{
+      margin-top: 21px;
+  }
+
+  .dialog .content{
+      margin-bottom:30px;
+  }
+
+  .dialog .header-content img{
+      width: 100%
+  }

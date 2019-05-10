@@ -1,0 +1,194 @@
+.mack-tooltip__container{
+    position: relative;
+    float: left;
+}
+
+.mack-tooltip__container > button {
+    color: #106Eb0;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.mack-tooltip__container > button:hover , .mack-tooltip__container > button:focus {
+    color: #0E629E;
+}
+
+.mack-tooltip__bubble{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 12.5rem;
+    height: auto;
+    z-index: 3;
+    background: #464646;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    content: attr(aria-label);
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-align:center;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    opacity:0;
+    text-align:left !important;
+}
+
+.mack-tooltip__bubble .mack-tooltip__text{
+    padding: 0.9375rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #464646;
+    font-family: Arial;
+}
+
+[mack-tooltip-position="right"] + span .mack-tooltip__bubble{
+    margin-left: 0.4375rem;
+    left: 100%;
+}
+
+[mack-tooltip-position="right"] + span .mack-tooltip__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-top:-5px;
+    top: 50%;
+    right: 100%;
+    border-right-color: #FFF !important
+}
+
+[mack-tooltip-position="right"] + span .mack-tooltip__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-top:-6px;
+    top: 50%;
+    right: 100%;
+    border-right-color: #969290 !important
+}
+
+[mack-tooltip-position="left"] + span .mack-tooltip__bubble{
+    margin-right: 0.4375rem;
+    right: 100%;
+}
+
+[mack-tooltip-position="left"] + span .mack-tooltip__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-top:-5px;
+    top: 50%;
+    left: 100%;
+    border-left-color: #FFF !important
+}
+
+[mack-tooltip-position="left"] + span .mack-tooltip__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-top:-6px;
+    top: 50%;
+    left: 100%;
+    border-left-color: #969290 !important
+}
+
+[mack-tooltip-position="top"] + span .mack-tooltip__bubble{
+    bottom: initial;
+    left: 100%;
+    top: initial;
+}
+
+[mack-tooltip-position="top"] + span .mack-tooltip__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-left:-5px;
+    top: 100%;
+    left: 50%;
+    border-top-color: transparent !important;
+    border-top-color: #FFF !important;
+}
+
+[mack-tooltip-position="top"] + span .mack-tooltip__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-left:-6px;
+    top: 100%;
+    left: 50%;
+    border-top-color: #969290 !important;
+}
+
+
+
+[mack-tooltip-position="bottom"] + span .mack-tooltip__bubble{
+    bottom: initial;
+    left: 100%;
+    top: initial;
+}
+
+[mack-tooltip-position="bottom"] + span .mack-tooltip__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-left:-5px;
+    top: initial;
+    bottom: 100%;
+    border-top-color: transparent !important;
+    border-bottom-color: #f7f7f7 !important;
+}
+
+[mack-tooltip-position="top"] + span .mack-tooltip__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-left:-6px;
+    top: initial;
+    bottom: 100%;
+    border-top-color: #969290 !important;
+}
+
+
+
+

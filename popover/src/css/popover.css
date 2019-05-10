@@ -1,0 +1,208 @@
+.mack-popover__container{
+    position: relative;
+    float: left;
+}
+
+.mack-popover__container > button {
+    color: #106Eb0;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.mack-popover__container > button:hover , .mack-popover__container > button:focus {
+    color: #0E629E;
+}
+
+.mack-popover__bubble{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 15rem;
+    height: auto;
+    z-index: 3;
+    background: #FFF;
+    border-radius: 0.25rem;
+    color: #464646;
+    border: 1px solid #969290;
+    box-shadow: 0 5px 10px rgba(0, 0,0 ,0.2);
+    content: attr(aria-label);
+    font-size: 0.75rem;
+    font-weight: normal;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.mack-popover__bubble .mack-popover__title{
+    font-size: .75rem;
+    color: #464646;
+    padding: 0.5625rem 0;
+    font-family: Arial;
+    font-weight: bold;
+    background: #f7f7f7;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #969290;
+    text-align: center;
+}
+
+.mack-popover__bubble .mack-popover__text{
+    padding: 0.9375rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #464646;
+    font-family: Arial;
+}
+
+[mack-popover-position="right"] + span .mack-popover__bubble{
+    margin-left: 0.4375rem;
+    left: 100%;
+}
+
+[mack-popover-position="right"] + span .mack-popover__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-top:-5px;
+    top: 50%;
+    right: 100%;
+    border-right-color: #FFF !important
+}
+
+[mack-popover-position="right"] + span .mack-popover__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-top:-6px;
+    top: 50%;
+    right: 100%;
+    border-right-color: #969290 !important
+}
+
+[mack-popover-position="left"] + span .mack-popover__bubble{
+    margin-right: 0.4375rem;
+    right: 100%;
+}
+
+[mack-popover-position="left"] + span .mack-popover__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-top:-5px;
+    top: 50%;
+    left: 100%;
+    border-left-color: #FFF !important
+}
+
+[mack-popover-position="left"] + span .mack-popover__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-top:-6px;
+    top: 50%;
+    left: 100%;
+    border-left-color: #969290 !important
+}
+
+[mack-popover-position="top"] + span .mack-popover__bubble{
+    bottom: initial;
+    left: 100%;
+    top: initial;
+}
+
+[mack-popover-position="top"] + span .mack-popover__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-left:-5px;
+    top: 100%;
+    left: 50%;
+    border-top-color: transparent !important;
+    border-top-color: #FFF !important;
+}
+
+[mack-popover-position="top"] + span .mack-popover__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-left:-6px;
+    top: 100%;
+    left: 50%;
+    border-top-color: #969290 !important;
+}
+
+
+
+[mack-popover-position="bottom"] + span .mack-popover__bubble{
+    bottom: initial;
+    left: 100%;
+    top: initial;
+}
+
+[mack-popover-position="bottom"] + span .mack-popover__bubble:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 5px;
+    margin-left:-5px;
+    top: initial;
+    bottom: 100%;
+    border-top-color: transparent !important;
+    border-bottom-color: #f7f7f7 !important;
+}
+
+[mack-popover-position="top"] + span .mack-popover__bubble:before{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(70,70,70,0);
+    border-width: 6px;
+    margin-left:-6px;
+    top: initial;
+    bottom: 100%;
+    border-top-color: #969290 !important;
+}
+
+
+
+
